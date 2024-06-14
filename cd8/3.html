@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Frase</title>
+</head>
+<body>
+    <h1>Repetir Frase</h1>
+    <input type="text" placeholder="Digite uma frase" id="frase">
+    <button onclick="repete()">Repetir 10 vezes</button>
+    <p id="repetir"></p>
+
+    <script>
+        function repete() {
+            var frase = document.getElementById("frase").value;
+            var repeticao = "";
+            for (i = 0; i < 10; i++) {
+                repeticao = repeticao + frase + "<br>";
+            }
+            document.getElementById("repetir").innerHTML = repeticao;
+        }
+    </script>
+</body>
+</html>
